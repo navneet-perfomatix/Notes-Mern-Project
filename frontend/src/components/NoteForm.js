@@ -67,22 +67,6 @@ const NoteForm = () => {
         className={emptyFields.includes('desc') ? 'error' : ''}
       />
 
-      {/* <label>Load (in kg):</label>
-      <input 
-        type="number"
-        onChange={(e) => setLoad(e.target.value)}
-        value={load}
-        className={emptyFields.includes('load') ? 'error' : ''}
-      />
-
-      <label>Reps:</label>
-      <input 
-        type="number"
-        onChange={(e) => setReps(e.target.value)}
-        value={reps}
-        className={emptyFields.includes('reps') ? 'error' : ''}
-      /> */}
-
       <button>Add Note</button>
       {error && <div className="error">{error}</div>}
     </form>
