@@ -29,8 +29,6 @@ const NoteDetails = ({ note }) => {
     <div className="note-details">
       <h4>{note.title}</h4>
       <h5>{note.desc}</h5>
-      {/* <p><strong>Load (kg): </strong>{note.load}</p>
-      <p><strong>Reps: </strong>{note.reps}</p> */}
       <p>{formatDistanceToNow(new Date(note.createdAt), { addSuffix: true })}</p>
       <span className="material-symbols-outlined" onClick={handleClick}>delete</span>
     </div>

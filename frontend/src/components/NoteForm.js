@@ -8,7 +8,6 @@ const NoteForm = () => {
 
   const [title, setTitle] = useState('')
   const [desc, setDesc] = useState('')
-  // const [reps, setReps] = useState('')
   const [error, setError] = useState(null)
   const [emptyFields, setEmptyFields] = useState([])
 
@@ -39,7 +38,6 @@ const NoteForm = () => {
     if (response.ok) {
       setTitle('')
       setDesc('')
-      // setReps('')
       setError(null)
       setEmptyFields([])
       console.log('new note added', json)
